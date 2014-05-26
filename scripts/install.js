@@ -27,3 +27,15 @@ installCheck.onsuccess = function() {
     button.addEventListener('click', install, false);
   };
 };
+
+
+var addPoint = function(){
+  this.innerHTML = parseInt(this.innerHTML) + 1;
+};
+
+var adv1 = document.getElementById("adv1");
+var adv2 = document.getElementById("adv2");
+
+adv1.onclick = addPoint;
+adv2.onclick = addPoint;
+
